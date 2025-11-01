@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+      body { background: #f8f9fa; }
+      .form-section { background: white; padding: 25px; border-radius: 6px; }
+      .payment-icons .btn { padding: 6px 12px; font-size: 16px; }
+      .send{background-color: #f8f9fa;}
+      .title{background-color: #f8f9fa;}
+   </style>
+</head>
+<body>
+   <div class="container-sm">
+    <diV class="title">
+    <h4 class="mb-3">Payment form example</h4>
+    </diV>
+    <!-- Error alert -->
+    <div class="alert alert-danger  mb-4">
+        Some fields are missing
+    </div>
+    <div class="form-section">
+    <form>
+        <!-- Card Row -->
+        <div class="row mb-3">
+            <div class="col-md-4 mb-2">
+                <label class="form-label">Card #</label>
+                <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
+            </div>
+            <div class="col-md-2 mb-2">
+                <label class="form-label">CVC #</label>
+                <input type="text" class="form-control" placeholder="0000">
+            </div>
+            <div class="col-md-2 mb-2">
+                <label class="form-label">Amount</label>
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" placeholder="Amount">
+                </div>
+            </div>
+        </div>
+        <!-- Name Row -->
+        <div class="row mb-3">
+            <div class="col-md-4 mb-2">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-md-4 mb-2">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <!-- Address Row -->
+        <div class="row mb-3">
+            <div class="col-md-4 mb-2">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-md-3 mb-2">
+                <label class="form-label">State</label>
+                <select class="form-select">
+                    <option selected>Pick a state</option>
+                    <option>New York</option>
+                    <option>Texas</option>
+                    <option>California</option>
+                    <option>Florida</option>
+                </select>
+            </div>
+            <div class="col-md-2 mb-2">
+                <label class="form-label">Postal Code</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <!-- Icons -->
+        <div class="mb-3">
+            <label class="form-label d-block">We accept:</label>
+            <div class="payment-icons">
+                <button class="btn btn-outline-secondary btn-sm"><i class="fa-brands fa-cc-visa"></i></button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="fa-brands fa-cc-mastercard"></i></button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="fa-brands fa-cc-amex"></i></button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="fa-brands fa-cc-paypal"></i></button>
+            </div>
+        </div>
+        <!-- Message -->
+        <div class="b-m4">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="3" placeholder="Add any notes here."></textarea>
+        </div>
+        <div class="send">
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary me-2 px-4">Cancel</button>
+            <button type="submit" class="btn btn-primary px-4">Send</button>
+        </div>
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>
